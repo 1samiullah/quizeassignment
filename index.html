@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+    body{
+        height: 100vh;
+        align-items: center;
+        padding: 0;
+        display: flex;
+        background-image: url(copy\ bagorund.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 99%;
+        height: 88vh;
+        background-image:;
+    }
+    .main{
+        height: 450px;
+        width: 100%;
+        margin: auto;
+        border: 2px solid white;
+        padding: 40px;
+        border-radius: 20px;
+        color: rgb(22, 24, 26);
+    }
+    button{
+        background-color: WHITE;
+        margin: 10px;
+    }
+    #hd{
+        
+        align-items: center;
+        text-align: center;
+        color: rgb(25, 234, 203);
+        }
+        #question{
+            color: rgb(255, 136, 0);
+        }
+    
+  
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1><span id="hd">HTML QUIZ</span></h1><hr>
+        <p id="question"></p>
+        <label>
+            <input type="radio" value="1" name="answer" onchange="enableBtn()">
+            <span id="opt1"></span>
+        </label><br>
+        <label>
+            <input type="radio" value="2" name="answer" onchange="enableBtn()">
+            <span id="opt2"></span>
+        </label><br>
+        <label>
+            <input type="radio" value="3" name="answer" onchange="enableBtn()">
+            <span id="opt3"></span>
+        </label><br>
+        <button onclick="complete()" disabled id="nxtbtn">NEXT</button>
+        <span id="time"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
